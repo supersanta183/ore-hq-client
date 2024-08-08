@@ -157,11 +157,10 @@ async fn main() {
 
 
                                                 if nonce % 100 == 0 {
-                                                    println!("hej");
+                                                    if nonce >= nonce_range.end + first_nonce {
+                                                        break;
+                                                    }
                                                     if hash_timer.elapsed().as_secs().ge(&cutoff) {
-                                                        if nonce >= nonce_range.end + first_nonce {
-                                                            break;
-                                                        }
                                                     }
                                                 } 
 
