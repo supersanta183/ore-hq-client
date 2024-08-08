@@ -157,6 +157,7 @@ async fn main() {
                                                 
                                                 println!("nonce: {}, end: {}", nonce, nonce_range.end);
                                                 if nonce >= nonce_range.end {
+                                                    println!("done 1111");
                                                     break;
                                                 }
 
