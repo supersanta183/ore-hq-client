@@ -156,10 +156,8 @@ async fn main() {
                                                 }
 
 
-                                                println!("nonce, {} end: {}", nonce, nonce_range.end);
-
                                                 if nonce % 100 == 0 {
-                                                    println!("hek");
+                                                    println!("hej");
                                                     if hash_timer.elapsed().as_secs().ge(&cutoff) {
                                                         if nonce >= nonce_range.end + first_nonce {
                                                             break;
